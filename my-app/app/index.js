@@ -29,27 +29,9 @@ const Home = () => {
         }}
       />
 
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View
-          style={{
-            flex: 1,
-            padding: SIZES.medium,
-          }}
-        >
-          <Welcome
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            handleClick={() => {
-              if (searchTerm) {
-                router.push(`/search/${searchTerm}`);
-              }
-            }}
-          />
+      <Text>Delete</Text>
 
-          <Popularjobs />
-          <Nearbyjobs />
-        </View>
-      </ScrollView>
+
     </SafeAreaView>
   );
 };
