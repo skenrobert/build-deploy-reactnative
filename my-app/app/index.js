@@ -29,7 +29,22 @@ const Home = () => {
         }}
       />
 
-      <Text>Delete</Text>
+
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View
+          style={{
+            flex: 1,
+            padding: SIZES.medium,
+          }}
+        >
+          <Welcome
+
+          />
+
+          <Popularjobs />
+          <Nearbyjobs />
+        </View>
+      </ScrollView>
 
 
     </SafeAreaView>
