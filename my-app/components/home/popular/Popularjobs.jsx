@@ -33,7 +33,20 @@ const Popularjobs = () => {
         ) : error ? (
           <Text> Something went wrong </Text>
         ) : (
-          <FlatList />
+          <FlatList
+            data={[1, 2, 3, 4, 5, 6, 7, 8]}
+            renderItem={({ item }) => ( 
+              // <PopularJobCard
+              //   item={item}
+              //   // selectedJob={selectedJob}
+              //   // handleCardPress={handleCardPress}
+              // />
+              <Text>change</Text>
+            )}
+            keyExtractor={(item) => item.job_id}
+            contentContainerStyle={{ columnGap: SIZES.medium }}
+            horizontal
+          />
         )}
       </View>
     </View>
