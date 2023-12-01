@@ -22,7 +22,8 @@ const Popularjobs = () => {
   const {data, isLoading, error} = useFetch(
     'search', { 
     query: 'React developer',
-    num_pages: 1,
+    page: '1',
+    num_pages: '1'
   });
 
 
