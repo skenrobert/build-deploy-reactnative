@@ -19,13 +19,12 @@ const Popularjobs = () => {
   // const isLoading = false;
   // const error = false;
 
-  const {data, isLoading, error} = useFetch(
-    'search', { 
-    query: 'React developer',
-    page: '1',
-    num_pages: '1'
+  const { data, isLoading, error } = useFetch("search", {
+    query: "React developer",
+    num_pages: "1",
   });
 
+  const [selectedJob, setSelectedJob] = useState();
 
   return (
     <View style={styles.container}>
