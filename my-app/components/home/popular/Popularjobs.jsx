@@ -22,7 +22,7 @@ const Popularjobs = () => {
     num_pages: "1",
   });
 
-  console.log('here '+isLoading);
+  console.log('data '+data);
 
   const [selectedJob, setSelectedJob] = useState();
 
