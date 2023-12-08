@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "expo-router";
 import {
   View,
   Text,
@@ -7,7 +8,6 @@ import {
   ActivityIndicator,
 } from "react-native";
 
-import { useRouter } from "expo-router";
 
 import styles from "./popularjobs.style";
 import { COLORS, SIZES } from "../../../constants";
@@ -22,7 +22,7 @@ const Popularjobs = () => {
     num_pages: "1",
   });
 
-  // console.log(data);
+  console.log('here '+isLoading);
 
   const [selectedJob, setSelectedJob] = useState();
 
