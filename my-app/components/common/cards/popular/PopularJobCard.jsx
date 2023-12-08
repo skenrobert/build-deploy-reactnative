@@ -9,6 +9,8 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
       style={styles.container(selectedJob, item)}
       onPress={() => handleCardPress(item)}
     >
+    console.log('in card');
+
       <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
         <Image
           source={{
