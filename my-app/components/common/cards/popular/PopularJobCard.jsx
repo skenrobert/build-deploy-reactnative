@@ -4,6 +4,8 @@ import styles from "./popularjobcard.style";
 import { checkImageURL } from "../../../../utils";
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
+  console.log('here 3'+item.employer_name)
+  
   return (
     <TouchableOpacity
       style={styles.container(selectedJob, item)}
@@ -22,7 +24,7 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
           style={styles.logoImage}
         />
       </TouchableOpacity>
-      <Text style={styles.companyName} numberOfLines={1}>
+      {/* <Text style={styles.companyName} numberOfLines={1}>
         {item.employer_name}
       </Text>
 
@@ -36,7 +38,7 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
           </Text>
           <Text style={styles.location}> {item.job_country}</Text>
         </View>
-      </View>
+      </View> */}
     </TouchableOpacity>
   );
 };
