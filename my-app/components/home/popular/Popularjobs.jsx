@@ -23,7 +23,7 @@ const Popularjobs = () => {
 
   
   const [selectedJob, setSelectedJob] = useState();
-  console.log('data '+data);
+  // console.log('data '+data);
 
   const handleCardPress = (item) => {
     router.push(`/job-details/${item.job_id}`);
@@ -47,7 +47,6 @@ const Popularjobs = () => {
         ) : (
           <FlatList
             data={data}
-            // data={[1, 2, 3, 4, 5, 6, 7, 8]}
             renderItem={({ item }) => (
               <PopularJobCard
                 item={item}
