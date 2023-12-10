@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 
 import styles from "./popularjobcard.style";
-import { checkImageURL } from "../../../../utils";
+import { checkImageURL } from "../../../../utils"; //TODO: fail image before change for other
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   // console.log('here 3'+item.employer_name)
