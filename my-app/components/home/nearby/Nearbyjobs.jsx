@@ -7,12 +7,12 @@ import {
 } from "react-native";
 
 
-import styles from "./popularjobs.style";
-import { COLORS, SIZES } from "../../../constants";
-import PopularJobCard from "../../common/cards/popular/PopularJobCard";
+import styles from "./nearbyjobs.style";
+import { COLORS } from "../../../constants";
+import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import useFetch from '../../../hook/useFetch';
 
-const Popularjobs = () => {
+const NearbyJobCard = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
     query: "React developer",
