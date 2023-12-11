@@ -1,3 +1,4 @@
+import React from "react";
 import { useRouter } from "expo-router";
 import {
   View,
@@ -12,7 +13,7 @@ import { COLORS } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import useFetch from '../../../hook/useFetch';
 
-const NearbyJobCard = () => {
+const Nearbyjobs  = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
     query: "React developer",
@@ -35,7 +36,9 @@ const NearbyJobCard = () => {
           <Text>Something went wrong</Text>
         ) : (
             data?.map( (job) => (
-              <NearbyJobCard />
+              <NearbyJobCard 
+              
+              />
             ))
         )}
       </View>
