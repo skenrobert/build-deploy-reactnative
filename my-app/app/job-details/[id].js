@@ -1,9 +1,9 @@
-import React from 'react'
+import { Text } from 'react-native'
 
-const [id] = () => {
+const JobDetails = () => {
   return (
-    <div>[id]</div>
+    <Text>JobDetails</Text>
   )
 }
 
-export default [id]
+export default JobDetails
