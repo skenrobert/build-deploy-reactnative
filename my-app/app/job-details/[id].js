@@ -40,6 +40,7 @@ const JobDetails = () => {
   }, []);
 
 
+  // buttons menu
   const displayTabContent = () => {
     switch (activeTab) {
       case "Qualifications":
