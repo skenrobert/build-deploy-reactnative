@@ -39,7 +39,9 @@ const Home = () => {
           }}
         >
           <Welcome
-
+              searchTerm={setSearchTerm}
+              setSearchTerm={setSearchTerm}
+              handleClick={()=>{}}
           />
 
           <Popularjobs />
