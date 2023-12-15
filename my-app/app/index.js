@@ -41,7 +41,11 @@ const Home = () => {
           <Welcome
               searchTerm={setSearchTerm}
               setSearchTerm={setSearchTerm}
-              handleClick={()=>{}}
+              handleClick={()=>{
+                if(searchTerm){
+                  
+                }
+              }}
           />
 
           <Popularjobs />
