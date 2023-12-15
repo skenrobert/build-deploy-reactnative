@@ -12,6 +12,7 @@ import {
 
 const Home = () => {
   const router = useRouter();
+const [first, setfirst] = useState(second)
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
