@@ -56,6 +56,10 @@ const handlePagination = (direction) => {
   }
 }
 
+useEffect(() => {
+  handleSearch()
+}, [])
+
 
   return (
     <div>[id]</div>
