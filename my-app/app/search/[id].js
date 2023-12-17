@@ -46,6 +46,16 @@ const JobSearch = () => {
     }
 };
 
+const handlePagination = (direction) => {
+  if (direction === 'left' && page > 1) {
+      setPage(page - 1)
+      handleSearch()
+  } else if (direction === 'right') {
+      setPage(page + 1)
+      handleSearch()
+  }
+}
+
 
   return (
     <div>[id]</div>
