@@ -17,7 +17,36 @@ const JobSearch = () => {
   const [searchLoader, setSearchLoader] = useState(false);
   const [searchError, setSearchError] = useState(null);
   const [page, setPage] = useState(1); 
-  
+
+  const handleSearch = async () => {
+    setSearchLoader(true);
+    setSearchResult([])
+
+    try {
+        const options = {
+            method: "GET",
+            url: `https://jsearch.p.rapidapi.com/search`,
+            headers: {
+                "X-RapidAPI-Key": '',
+                "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
+            },
+            params: {
+                query: params.id,
+                page: page.toString(),
+            },
+        };
+
+        const response = await axios.request(options);
+        setSearchResult(response.data.data);
+    } catch (error) {
+        setSearchError(error);
+        console.log(error);
+    } finally {
+        setSearchLoader(false);
+    }
+};
+
+
   return (
     <div>[id]</div>
   )
