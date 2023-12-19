@@ -1,6 +1,8 @@
 # Steps for the application is barely downloaded
 1. npm install
-2. npm start
+2. npm install expo-font
+3. npm install axios
+4. npm start
 
 # test the app on a phone and plugin for vs
 1. install expo client in our phone 
