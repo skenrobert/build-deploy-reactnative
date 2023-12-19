@@ -7,8 +7,9 @@
 2. VS (react native tools, React-Native/React/Redux snipp, Material Icon Theme)
 3. https://docs.expo.dev/routing/installation/
 
-# publicar la aplicacion en [expo](https://expo.dev/)https://expo.dev/
+# publicar la aplicacion en:
 1. expo publish
+[expo](https://expo.dev/)https://expo.dev/
 
 
 
