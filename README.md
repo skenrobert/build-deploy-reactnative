@@ -9,7 +9,7 @@
 
 # publicar la aplicacion en:
 1. expo publish
-[expo](https://expo.dev/)https://expo.dev/
+2. https://expo.dev/
 
 
 
